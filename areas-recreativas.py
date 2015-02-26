@@ -10,3 +10,10 @@ for directorio in doc["directorios"]["directorio"]:
 	print "Nombre: %s"%directorio["nombre"]["content"]
 	direccion=directorio["direccion"]
 	print direccion[0]
+
+print "\n"
+print "Áreas recreativas con la categoria Miradores"
+for directorio in doc["directorios"]["directorio"]:
+	for categoria in directorio["categorias"]["categoria"]:
+		if categoria["content"]=="Miradores":
+			print directorio["nombre"]["content"]
