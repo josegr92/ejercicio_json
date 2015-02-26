@@ -19,6 +19,7 @@ for directorio in doc["directorios"]["directorio"]:
 			print directorio["nombre"]["content"]
 
 print "\n"
+cont=0
 nom=raw_input("Introduce el nombre del área recreativa: ")
 for directorio in doc["directorios"]["directorio"]:
 	if directorio["nombre"]["content"]==nom:
@@ -26,3 +27,7 @@ for directorio in doc["directorios"]["directorio"]:
 		latitud=localizacion[0]
 		longitud=localizacion[1]
 		print "http://www.openstreetmap.org/#map=14/%s/%s"%(latitud,longitud)
+	cont=cont+1
+
+print "\n"
+print "Hay %i áreas recreativas"%cont
