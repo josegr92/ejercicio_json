@@ -8,4 +8,5 @@ fich.close()
 
 for directorio in doc["directorios"]["directorio"]:
 	print "Nombre: %s"%directorio["nombre"]["content"]
-	print ":Dirección: %s"%directorio["direccion"]
+	direccion=directorio["direccion"]
+	print direccion[0]
