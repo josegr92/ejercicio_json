@@ -31,3 +31,13 @@ for directorio in doc["directorios"]["directorio"]:
 
 print "\n"
 print "Hay %i áreas recreativas"%cont
+
+print "\n"
+print "Identificadores de las áreas recreativas"
+for directorio in doc["directorios"]["directorio"]:
+	print "Identificador: %s"%directorio["identificador"]
+
+ident=int(raw_input("Introduce el identificador del área recreativa: "))
+for directorio in doc["directorios"]["directorio"]:
+	if directorio["identificador"]==ident:
+		print "Nombre: %s"%directorio["nombre"]["content"]
