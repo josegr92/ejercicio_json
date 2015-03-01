@@ -20,7 +20,7 @@ for directorio in doc["directorios"]["directorio"]:
 
 print "\n"
 cont=0
-nom=raw_input("Introduce el nombre del área recreativa: ")
+nom=raw_input("Introduce el nombre del área recreativa: ") #No introducir nombres que tenga acentos o ñ porque da error de codificacion
 for directorio in doc["directorios"]["directorio"]:
 	if directorio["nombre"]["content"]==nom:
 		localizacion=directorio["localizacion"]["content"].split()
